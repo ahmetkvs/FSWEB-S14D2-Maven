@@ -1,0 +1,33 @@
+package org.example.model;
+
+public class Bedroom extends Room{
+    private Bed bed;
+    private Lamp lamp;
+    private Wardrobe wardrobe;
+    private Carpet carpet;
+
+    public Bedroom(String name, Wall wall1, Wall wall2,
+                   Wall wall3, Wall wall4, Ceiling ceiling, Bed bed, Lamp lamp, Wardrobe wardrobe, Carpet carpet) {
+        super(name,wall1,wall2,wall3,wall4,ceiling);
+        this.bed = bed;
+        this.lamp = lamp;
+        this.wardrobe = wardrobe;
+        this.carpet = carpet;
+    }
+
+    public Bed getBed() {
+        return this.bed;
+    }
+
+    public Lamp getLamp() {
+        return this.lamp;
+    }
+
+    public Wardrobe getWardrobe() {
+        return this.wardrobe;
+    }
+
+    public Carpet getCarpet() {
+        return this.carpet;
+    }
+}
